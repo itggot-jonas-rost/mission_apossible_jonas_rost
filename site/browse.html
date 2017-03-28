@@ -9,39 +9,66 @@
         </head>
         <body>
             <header>
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img alt="Menu" title="Menu" src="./img/ic_menu_white_36dp.png"/></a>
+                <nav id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img alt="Menu" title="Menu" src="./img/ic_menu_white_24dp.png"/></a>
                     <a href="index.html">Home</a>
                     <a href="browse.html">Browse</a>
                     <a href="map.html">Map</a>
-                    <a href="#">Settings</a>
-                </div>
-                <span class="menu" onclick="openNav()"><img class="menu_pic" alt="Menu" title="Menu" src="./img/ic_menu_white_36dp.png"/></span>
+                    <div class="dropdown">
+                        <a onclick="myFunction()" class="meny_text">Settings</a>
+                        <div id="myDropdown" class="nav_content">
+                            <a href="#" class="set_text">Account settings</a>
+                            <a href="#" class="set_text">Configure GPS</a>
+                            <a href="#" class="set_text">Language</a>
+                            <a href="settings.html" class="set_text">More settings...</a>
+                        </div>
+                    </div>
+                </nav>
+                <span class="menu" onclick="openNav()"><img class="menu_pic" alt="Menu" title="Menu" src="./img/ic_menu_white_24dp.png"/></span>
                 <div class="title"><h1>Browse</h1></div>
-                <search><img alt="Favorite" title="Favorite" src="./img/ic_search_white_36dp.png"/></search>
+                <search><img alt="Search" title="Search" src="./img/ic_search_white_24dp.png"/></search>
             </header>
-            <div class="browse_main">
-                <div class="destination_pic">
+
+
+            <section class="browse_main">
+                <div class="destination_pic" onclick="modal_popup()">
                      <img alt="Events picture" title="Events picture" src="./img/tomorrowland.jpg"/>
                      <div class="text_back"><p class="pic_text">Events</p></div>
                 </div>
-                <div class="destination_pic">
+                <div class="destination_pic" onclick="modal_popup()">
                     <img alt="Mountain picture" title="Mountain picture" src="./img/mountain.jpg"/>
                     <div class="text_back"><p class="pic_text">Beautiful</p></div>
                 </div>
-                <div class="destination_pic">
+                <div class="destination_pic" onclick="modal_popup()">
                     <img alt="City picture" title="City picture" src="./img/city.jpg"/>
                     <div class="text_back"><p class="pic_text">Cities</p></div>
                 </div>
-                <div class="destination_pic">
+                <div class="destination_pic" onclick="modal_popup()">
                     <img alt="Beach picture" title="Beach picture" src="./img/beach.jpg"/>
                     <div class="text_back"><p class="pic_text">Hot</p></div>
                 </div>
-                <div class="destination_pic">
+                <div class="destination_pic" onclick="modal_popup()">
                      <img alt="Pyramid picture" title="Pyramid picture" src="./img/pyramid.jpg"/>
                      <div class="text_back"><p class="pic_text">Historical</p></div>
                 </div>
+            </section>
+
+            <div id="myModal" class="modal">
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal_body">
+                        <p class="modal_text">You have requested a teleportation to the selected destination...</p>
+                        <p class="modal_text">Would you like to continue?</p>
+                        <div class="button_container">
+                            <button><a href="map.html">Yes</a></button>
+                            <button id="close_button">Cancel</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </body>
         <script src="js/script.js"></script>
     </html>
