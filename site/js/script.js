@@ -6,19 +6,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-
-
-function openSearch() {
-    document.getElementById("mySearch").style.width = "40%";
-}
-
-function closeSearch() {
-    document.getElementById("mySearch").style.width = "0";
-}
-
-
-
-function Settingsdropdown() {
+function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
