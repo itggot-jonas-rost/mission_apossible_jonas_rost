@@ -309,6 +309,7 @@ search{
     margin:0;
     margin-bottom: 12.5px;
     margin-top: 12.5px;
+    box-shadow: 3px 7px 49px -5px rgba(0,0,0,0.75);
 }
 
 .pic_text{
