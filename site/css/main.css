@@ -229,6 +229,7 @@ search{
     position: relative;
     top: 100px;
     
+    
 }
 
 .home_text{
@@ -505,4 +506,38 @@ button a{
         padding: 3% 2% 2% 2%;
         margin: 0;
     }  
+}
+
+@media only screen and (min-device-width: 319px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) { 
+
+    .home_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+    }
+
+
+
+    .home_pic{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: -10px;
+        position: relative;
+    }
+
+    .home_text{
+        align-items: center;
+        text-decoration: none;
+        font-size: 36px;
+        font-family: Roboto Regular;
+        color: white;
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
